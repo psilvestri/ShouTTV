@@ -1,6 +1,7 @@
 /* eslint-disable */
-function main () {
+export default function main () {
 /* eslint-enable */
+
   const url = 'https://api.twitch.tv/helix/users?login=Zarenimizxax'
 
   const myRequest = new Request(url, {
@@ -17,6 +18,7 @@ function main () {
   const userJson = myRequest.response.text
 
   const userId = userJson.data.id
+  console.log('test')
 
   console.log(userJson)
 
